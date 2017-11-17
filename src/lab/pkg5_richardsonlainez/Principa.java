@@ -110,10 +110,10 @@ public class Principa extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
-        jScrollPane5 = new javax.swing.JScrollPane();
+        jScrollPane7 = new javax.swing.JScrollPane();
         jl_equipos_comprar = new javax.swing.JList<>();
         jPanel7 = new javax.swing.JPanel();
-        jScrollPane6 = new javax.swing.JScrollPane();
+        jScrollPane5 = new javax.swing.JScrollPane();
         jl_jugadores_comprar = new javax.swing.JList<>();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -687,38 +687,28 @@ public class Principa extends javax.swing.JFrame {
 
         jl_equipos_comprar.setModel(new DefaultListModel()
         );
-        jl_equipos_comprar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jl_equipos_comprarMouseClicked(evt);
-            }
-        });
-        jScrollPane5.setViewportView(jl_equipos_comprar);
+        jScrollPane7.setViewportView(jl_equipos_comprar);
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 623, Short.MAX_VALUE)
-                .addGap(19, 19, 19))
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 632, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jl_jugadores_comprar.setModel(new DefaultListModel()
         );
-        jl_jugadores_comprar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jl_jugadores_comprarMouseClicked(evt);
-            }
-        });
-        jScrollPane6.setViewportView(jl_jugadores_comprar);
+        jScrollPane5.setViewportView(jl_jugadores_comprar);
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -726,14 +716,13 @@ public class Principa extends javax.swing.JFrame {
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 617, Short.MAX_VALUE)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 632, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -751,13 +740,10 @@ public class Principa extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JD_comprar_JugadoresLayout.createSequentialGroup()
                 .addContainerGap(101, Short.MAX_VALUE)
-                .addGroup(JD_comprar_JugadoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JD_comprar_JugadoresLayout.createSequentialGroup()
-                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(34, 34, 34))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JD_comprar_JugadoresLayout.createSequentialGroup()
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(49, 49, 49))))
+                .addGroup(JD_comprar_JugadoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34))
         );
         JD_comprar_JugadoresLayout.setVerticalGroup(
             JD_comprar_JugadoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -987,23 +973,15 @@ public class Principa extends javax.swing.JFrame {
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
-        
+        jl_equipos_comprar.setModel(modelo_lista_equipos);
+        jl_jugadores_comprar.setModel(modelo_lista_jugadores);
         this.JD_comprar_Jugadores.setModal(true);
         JD_comprar_Jugadores.pack();
         JD_comprar_Jugadores.setLocationRelativeTo(this);
         JD_comprar_Jugadores.setVisible(true);
-        jl_equipos_comprar.setModel(modelo_lista_equipos);
-        jl_jugadores_comprar.setModel(modelo_lista_jugadores);
+        
 
     }//GEN-LAST:event_jMenuItem1ActionPerformed
-
-    private void jl_equipos_comprarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jl_equipos_comprarMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jl_equipos_comprarMouseClicked
-
-    private void jl_jugadores_comprarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jl_jugadores_comprarMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jl_jugadores_comprarMouseClicked
 
     /**
      * @param args the command line arguments
@@ -1102,7 +1080,7 @@ public class Principa extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JButton jb_crear_equipo;
     private javax.swing.JDialog jd_modificar_eliminar;
     private javax.swing.JList<String> jl_equipos_comprar;
