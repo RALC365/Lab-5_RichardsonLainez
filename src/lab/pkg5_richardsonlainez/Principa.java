@@ -6,6 +6,7 @@
 package lab.pkg5_richardsonlainez;
 
 import javax.swing.DefaultListModel;
+import javax.swing.JOptionPane;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 /**
@@ -115,6 +116,11 @@ public class Principa extends javax.swing.JFrame {
         jPanel7 = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
         jl_jugadores_comprar = new javax.swing.JList<>();
+        mpop_comprar_equipo = new javax.swing.JPopupMenu();
+        Comprar_jugador = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JSeparator();
+        mpop_comprar_jugador = new javax.swing.JPopupMenu();
+        Comprar_equipo = new javax.swing.JMenuItem();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
@@ -687,6 +693,11 @@ public class Principa extends javax.swing.JFrame {
 
         jl_equipos_comprar.setModel(new DefaultListModel()
         );
+        jl_equipos_comprar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jl_equipos_comprarMouseClicked(evt);
+            }
+        });
         jScrollPane7.setViewportView(jl_equipos_comprar);
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -708,6 +719,11 @@ public class Principa extends javax.swing.JFrame {
 
         jl_jugadores_comprar.setModel(new DefaultListModel()
         );
+        jl_jugadores_comprar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jl_jugadores_comprarMouseClicked(evt);
+            }
+        });
         jScrollPane5.setViewportView(jl_jugadores_comprar);
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
@@ -758,6 +774,12 @@ public class Principa extends javax.swing.JFrame {
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(43, Short.MAX_VALUE))
         );
+
+        Comprar_jugador.setText("jMenuItem5");
+        mpop_comprar_equipo.add(Comprar_jugador);
+
+        Comprar_equipo.setText("jMenuItem5");
+        mpop_comprar_jugador.add(Comprar_equipo);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -973,6 +995,7 @@ public class Principa extends javax.swing.JFrame {
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(jMenu1, "Primero debes seleccionar un jugador y luego seleccionar el equipo");
         jl_equipos_comprar.setModel(modelo_lista_equipos);
         jl_jugadores_comprar.setModel(modelo_lista_jugadores);
         this.JD_comprar_Jugadores.setModal(true);
@@ -982,6 +1005,36 @@ public class Principa extends javax.swing.JFrame {
         
 
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jl_equipos_comprarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jl_equipos_comprarMouseClicked
+        // TODO add your handling code here:
+//        if(evt.isMetaDown()){
+//            pos_seleccionado = jl_equipos_comprar.getSelectedIndex();//le di en equipo
+//           mpop_comprar_jugador.show(evt.getComponent(), //ahora lo hice para comprar un jugador
+//                        evt.getX(), evt.getY()); 
+//        }///AQUI NOS QUEDAMOS
+
+//        jl_equipos_comprar.setModel(modelo_lista_equipos);
+//        jl_jugadores_comprar.setModel(modelo_lista_jugadores);
+//        this.JD_comprar_Jugadores.setModal(true);
+//        JD_comprar_Jugadores.pack();
+//        JD_comprar_Jugadores.setLocationRelativeTo(this);
+//        JD_comprar_Jugadores.setVisible(true);
+    }//GEN-LAST:event_jl_equipos_comprarMouseClicked
+
+    private void jl_jugadores_comprarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jl_jugadores_comprarMouseClicked
+        // TODO add your handling code here:
+        pos_seleccionado_jugadores = jl_jugadores_comprar.getSelectedIndex();
+        JOptionPane.showMessageDialog(jMenu1, "Excelente\nAhora selecciona un equipo con clic derecho");
+        
+        
+        
+        
+        
+        
+        
+        //PARA JUGADORES
+    }//GEN-LAST:event_jl_jugadores_comprarMouseClicked
 
     /**
      * @param args the command line arguments
@@ -1019,6 +1072,8 @@ public class Principa extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem Comprar_equipo;
+    private javax.swing.JMenuItem Comprar_jugador;
     private javax.swing.JMenuItem Eliminar_equipo;
     private javax.swing.JMenuItem Eliminar_jugadores;
     private javax.swing.JDialog JD_Crear_Equipos;
@@ -1081,6 +1136,7 @@ public class Principa extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JButton jb_crear_equipo;
     private javax.swing.JDialog jd_modificar_eliminar;
     private javax.swing.JList<String> jl_equipos_comprar;
@@ -1092,6 +1148,8 @@ public class Principa extends javax.swing.JFrame {
     private javax.swing.JPopupMenu jpop_equipos;
     private javax.swing.JPopupMenu jpop_jugadores;
     private javax.swing.JDialog modificar_equipos;
+    private javax.swing.JPopupMenu mpop_comprar_equipo;
+    private javax.swing.JPopupMenu mpop_comprar_jugador;
     private javax.swing.JSpinner sp_copas_ganadas;
     private javax.swing.JSpinner sp_copas_ganadas_modificar;
     private javax.swing.JSpinner sp_habilidad;
