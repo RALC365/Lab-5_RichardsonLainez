@@ -141,18 +141,23 @@ public class Principa extends javax.swing.JFrame {
         JD_Crear_Equipos.setBackground(new java.awt.Color(51, 51, 255));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 102, 255));
         jLabel2.setText("Nombre");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(102, 102, 255));
         jLabel3.setText("Presupuesto");
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(102, 102, 255));
         jLabel4.setText("Copas Ganadas");
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(102, 102, 255));
         jLabel5.setText("Estadio");
 
         jb_crear_equipo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jb_crear_equipo.setForeground(new java.awt.Color(102, 102, 255));
         jb_crear_equipo.setText("Crear Equipo");
         jb_crear_equipo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -246,25 +251,39 @@ public class Principa extends javax.swing.JFrame {
 
         JD_Crear_Jugadores.setBackground(new java.awt.Color(255, 204, 102));
 
+        jLabel6.setBackground(new java.awt.Color(51, 51, 255));
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(51, 102, 255));
         jLabel6.setText("Nombre");
 
+        jLabel7.setBackground(new java.awt.Color(51, 51, 255));
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(51, 102, 255));
         jLabel7.setText("Precio");
 
+        jLabel8.setBackground(new java.awt.Color(51, 51, 255));
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(51, 102, 255));
         jLabel8.setText("Poscición");
 
+        jLabel9.setBackground(new java.awt.Color(51, 51, 255));
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(51, 102, 255));
         jLabel9.setText("Habilidad");
 
+        jLabel10.setBackground(new java.awt.Color(51, 51, 255));
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(51, 102, 255));
         jLabel10.setText("Tecnica");
 
+        jLabel11.setBackground(new java.awt.Color(51, 51, 255));
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(51, 102, 255));
         jLabel11.setText("Resistencia Fisica");
 
+        jButton1.setBackground(new java.awt.Color(51, 51, 255));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(51, 102, 255));
         jButton1.setText("Crear Jugador");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -446,9 +465,11 @@ public class Principa extends javax.swing.JFrame {
         );
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(51, 153, 255));
         jLabel13.setText("Equipos");
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(51, 153, 255));
         jLabel14.setText("Jugadores");
 
         javax.swing.GroupLayout jd_modificar_eliminarLayout = new javax.swing.GroupLayout(jd_modificar_eliminar.getContentPane());
@@ -525,20 +546,25 @@ public class Principa extends javax.swing.JFrame {
         jpop_jugadores.add(Eliminar_jugadores);
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(0, 102, 255));
         jLabel15.setText("Estadio");
 
         jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(0, 102, 255));
         jLabel16.setText("Nombre");
 
         jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(0, 102, 255));
         jLabel17.setText("Presupuesto");
 
         sp_presupuesto_modificar.setModel(new javax.swing.SpinnerNumberModel(0.0d, 0.0d, null, 10.0d));
 
         jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(0, 102, 255));
         jLabel18.setText("Copas Ganadas");
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(0, 102, 255));
         jButton2.setText("Modificar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -608,28 +634,35 @@ public class Principa extends javax.swing.JFrame {
         sp_resistencia_fisica1.setModel(new javax.swing.SpinnerNumberModel(0.0d, 0.0d, 100.0d, 10.0d));
 
         jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(51, 153, 255));
         jLabel19.setText("Nombre");
 
         jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(51, 153, 255));
         jLabel20.setText("Precio");
 
         jLabel21.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(51, 153, 255));
         jLabel21.setText("Poscición");
 
         jLabel22.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(51, 153, 255));
         jLabel22.setText("Habilidad");
 
         sp_habilidad1.setModel(new javax.swing.SpinnerNumberModel(0.0d, 0.0d, 100.0d, 10.0d));
 
         jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(51, 153, 255));
         jLabel23.setText("Tecnica");
 
         sp_tecnica1.setModel(new javax.swing.SpinnerNumberModel(0.0d, 0.0d, 100.0d, 10.0d));
 
         jLabel24.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(51, 153, 255));
         jLabel24.setText("Resistencia Fisica");
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(51, 153, 255));
         jButton3.setText("Modificar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -697,9 +730,11 @@ public class Principa extends javax.swing.JFrame {
         );
 
         jLabel25.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(0, 51, 255));
         jLabel25.setText("Equipos");
 
         jLabel26.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(0, 51, 255));
         jLabel26.setText("Jugadores");
 
         jl_equipos_comprar.setModel(new DefaultListModel()
