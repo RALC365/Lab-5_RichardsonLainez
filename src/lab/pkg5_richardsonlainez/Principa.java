@@ -121,6 +121,11 @@ public class Principa extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         mpop_comprar_jugador = new javax.swing.JPopupMenu();
         Comprar_equipo = new javax.swing.JMenuItem();
+        jDialog1 = new javax.swing.JDialog();
+        jPanel8 = new javax.swing.JPanel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jTree1 = new javax.swing.JTree();
+        jLabel27 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
@@ -131,6 +136,9 @@ public class Principa extends javax.swing.JFrame {
         jMenu4 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
+
+        JD_Crear_Equipos.setBackground(new java.awt.Color(51, 51, 255));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel2.setText("Nombre");
@@ -236,7 +244,7 @@ public class Principa extends javax.swing.JFrame {
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        JD_Crear_Jugadores.setBackground(new java.awt.Color(51, 0, 255));
+        JD_Crear_Jugadores.setBackground(new java.awt.Color(255, 204, 102));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel6.setText("Nombre");
@@ -381,6 +389,9 @@ public class Principa extends javax.swing.JFrame {
             JD_MostrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 486, Short.MAX_VALUE)
         );
+
+        jLabel12.setBackground(new java.awt.Color(0, 102, 255));
+        jLabel12.setForeground(new java.awt.Color(255, 255, 51));
 
         jl_equipos_modificar_eliminar.setModel(new DefaultListModel()
         );
@@ -781,6 +792,84 @@ public class Principa extends javax.swing.JFrame {
         Comprar_equipo.setText("jMenuItem5");
         mpop_comprar_jugador.add(Comprar_equipo);
 
+        jDialog1.setBackground(new java.awt.Color(102, 102, 255));
+
+        jPanel8.setBackground(new java.awt.Color(51, 102, 255));
+
+        javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Liga Española");
+        javax.swing.tree.DefaultMutableTreeNode treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Barcelona");
+        javax.swing.tree.DefaultMutableTreeNode treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Messi");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Suarez");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Pique");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Ronaldinho(Sí, todavía sigue)");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Otras leyendas");
+        treeNode2.add(treeNode3);
+        treeNode1.add(treeNode2);
+        treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("Real Madrid");
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Cristiano Ronaldo");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Sergio Ramos");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Pepe");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Navas");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("James Rodriguez(Regresó)");
+        treeNode2.add(treeNode3);
+        treeNode3 = new javax.swing.tree.DefaultMutableTreeNode("Otros jugadores chingones");
+        treeNode2.add(treeNode3);
+        treeNode1.add(treeNode2);
+        jTree1.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
+        jScrollPane6.setViewportView(jTree1);
+
+        jLabel27.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel27.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel27.setText("ARBOLITO CHINGÖN");
+
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(113, 113, 113)
+                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 609, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(137, 137, 137)
+                        .addComponent(jLabel27)))
+                .addContainerGap(95, Short.MAX_VALUE))
+        );
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addComponent(jLabel27)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
+        );
+
+        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
+        jDialog1.getContentPane().setLayout(jDialog1Layout);
+        jDialog1Layout.setHorizontalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialog1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jDialog1Layout.setVerticalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialog1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab/pkg5_richardsonlainez/Champions-League-Final.jpg"))); // NOI18N
@@ -850,6 +939,15 @@ public class Principa extends javax.swing.JFrame {
             }
         });
         jMenu1.add(jMenuItem1);
+
+        jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem5.setText("Árbol");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem5);
 
         jMenuBar1.add(jMenu1);
 
@@ -1008,25 +1106,45 @@ public class Principa extends javax.swing.JFrame {
 
     private void jl_equipos_comprarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jl_equipos_comprarMouseClicked
         // TODO add your handling code here:
-//        if(evt.isMetaDown()){
-//            pos_seleccionado = jl_equipos_comprar.getSelectedIndex();//le di en equipo
-//           mpop_comprar_jugador.show(evt.getComponent(), //ahora lo hice para comprar un jugador
-//                        evt.getX(), evt.getY()); 
-//        }///AQUI NOS QUEDAMOS
+            
 
-//        jl_equipos_comprar.setModel(modelo_lista_equipos);
-//        jl_jugadores_comprar.setModel(modelo_lista_jugadores);
-//        this.JD_comprar_Jugadores.setModal(true);
-//        JD_comprar_Jugadores.pack();
-//        JD_comprar_Jugadores.setLocationRelativeTo(this);
-//        JD_comprar_Jugadores.setVisible(true);
+        pos_seleccionado = jl_equipos_comprar.getSelectedIndex();
+        if (!((Jugadores)modelo_lista_jugadores.getElementAt(pos_seleccionado_jugadores)).getDisponibilidad()) {
+            
+            if (((Equipos)modelo_lista_equipos.getElementAt(pos_seleccionado)).getPresupuesto()-
+                    ((Jugadores)modelo_lista_jugadores.getElementAt(pos_seleccionado_jugadores)).getPrecio()>=0) {
+
+                double pres = ((Equipos)modelo_lista_equipos.getElementAt(pos_seleccionado)).getPresupuesto()-
+                    ((Jugadores)modelo_lista_jugadores.getElementAt(pos_seleccionado_jugadores)).getPrecio();
+                ((Equipos)modelo_lista_equipos.getElementAt(pos_seleccionado)).setPresupuesto(pres);
+                ((Jugadores)modelo_lista_jugadores.getElementAt(pos_seleccionado_jugadores)).setDisponibilidad(true);
+
+
+                ((Equipos)modelo_lista_equipos.getElementAt(pos_seleccionado)).getJugadores().add((Jugadores)modelo_lista_jugadores.getElementAt(pos_seleccionado_jugadores));
+                System.out.println((Jugadores)modelo_lista_jugadores.getElementAt(pos_seleccionado_jugadores)   );
+                JOptionPane.showMessageDialog(JD_comprar_Jugadores, "Listo!!!");
+            }else{
+                JOptionPane.showMessageDialog(JD_comprar_Jugadores, "Lo siento, no tenes presupuesto");
+            }
+        }else{
+            JOptionPane.showMessageDialog(JD_comprar_Jugadores, "Jejejeje, te dije que no estaba disponible");
+        }
+            
+
+
+
+
     }//GEN-LAST:event_jl_equipos_comprarMouseClicked
 
     private void jl_jugadores_comprarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jl_jugadores_comprarMouseClicked
         // TODO add your handling code here:
         pos_seleccionado_jugadores = jl_jugadores_comprar.getSelectedIndex();
-        JOptionPane.showMessageDialog(jMenu1, "Excelente\nAhora selecciona un equipo con clic derecho");
         
+        if (((Jugadores)modelo_lista_jugadores.getElementAt(pos_seleccionado_jugadores)).getDisponibilidad()) {
+            JOptionPane.showMessageDialog(JD_comprar_Jugadores, "El que seleccionaste no esta disponible");
+        }else{
+            JOptionPane.showMessageDialog(JD_comprar_Jugadores, "Excelente\nAhora selecciona un equipo y automaticamente se añadirá");
+        }
         
         
         
@@ -1035,6 +1153,14 @@ public class Principa extends javax.swing.JFrame {
         
         //PARA JUGADORES
     }//GEN-LAST:event_jl_jugadores_comprarMouseClicked
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        
+        this.jDialog1.setModal(true);
+        jDialog1.pack();
+        jDialog1.setLocationRelativeTo(this);
+        jDialog1.setVisible(true);
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1089,6 +1215,7 @@ public class Principa extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JDesktopPane jDesktopPane1;
+    private javax.swing.JDialog jDialog1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1108,6 +1235,7 @@ public class Principa extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -1123,6 +1251,7 @@ public class Principa extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -1130,13 +1259,16 @@ public class Principa extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JTree jTree1;
     private javax.swing.JButton jb_crear_equipo;
     private javax.swing.JDialog jd_modificar_eliminar;
     private javax.swing.JList<String> jl_equipos_comprar;
